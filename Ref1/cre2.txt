@@ -1,0 +1,22 @@
+nodeMCU v3 + PN532 nfc/rfid + NFC App(by ai2) on android phone(note4) ,receive/send the ndef msg between android phone and pn532.
+1. for work, send  a control command to on/off  2 LEDs  from  a NFC app (on Android phone) to the PN532 module via NFC(Near field communication)
+2. Read  status of  2 LEDs by sending the status from PN532 to display on an Android phone (using NFC app which developed from the ai2 app inventor).
+
+การใช้งานแบบ นำมือถือที่มี nfc chip ไปลอยเหนือ(ประมาณ 2-3ซม.) บน nfc/rfid module(pn532) เพื่อทำการสื่อสารระหว่างกันผ่านทาง NFC Technology (Near field communication)
+1. การทำงานจะส่งคำสั่งควบคุมการเปิดปิด หลอด LED จาก NFC app บน Andorid phone ไปยัง pn532 rfid/nfc module ผ่านทาง  Near field communication (NFC)
+2. อ่านค่าสถานะหลอด LED ทั้งสองหลอด โดยส่งค่าสถานะจาก PN532 ไปแสดงผลยัง หน้าจอของมือถือ android phone โดยใช้ NFC app ที่เขียนขึ้นจาก app inventor 2
+
+-Related Topic
+-App Inventor 2 แนะนำการใช้งานเบื้องต้น สร้างAppติดตั้งในมือถือ 16 นาที (introducing  for creating  app from app inventor2  within 16 minutes)
+https://youtu.be/m3WCAEIJaZc
+-ESP8266(ESP Easy)+ RFID PN532, Send Remote command to other ESP when RFID Tag id matched(Addt 2) 
+https://youtu.be/5gomPXCLV9k
+
+-Download ino file,apk,aia, library, pn532 manual, image etc , from link below.
+https://drive.google.com/open?id=0BzjoxIwEMrM-TlBqOG5xLTlvU2M
+
+credit
+-https://www.arduinoall.com/p/871
+-http://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_93&products_id=2242
+-http://www.elechouse.com/elechouse/images/product/PN532_module_V3/PN532_%20Manual_V3.pdf  //manual
+-https://goo.gl/TaYwKg  //http://thaiopensource.org  nodemcu v2
