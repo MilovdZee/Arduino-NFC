@@ -25,6 +25,10 @@ uint8_t uid[3] = { 0x12, 0x34, 0x56 };
 void setup()
 {
   Serial.begin(9600);
+
+  // This needs a version of esp8266 > 2.3.0 to function. See https://github.com/esp8266/Arduino.
+  Serial.setRxBufferSize(2048);
+  
   Serial.println("\n======== KASSABONNEN DING ========");
 
   pinMode(LED_RED, OUTPUT);
@@ -60,7 +64,7 @@ void loop(){
     buffer[charNr++] = c;
     buffer[charNr] = 0;
 
-    int maxDelay = 1000;
+    int maxDelay = 100;
     while(maxDelay-- > 0) {
       if(Serial.available() > 0) {
         break;
